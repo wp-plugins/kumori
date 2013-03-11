@@ -186,7 +186,7 @@
 </form>
 <br/>
 
-<h3>Delete Bucket</h3>
+<h3>Create Folder</h3>
 <form name="createFolder" action="<?php echo admin_url('admin.php?page='.KUMORI_S3_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">

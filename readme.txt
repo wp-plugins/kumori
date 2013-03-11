@@ -28,6 +28,10 @@ It requires a subscription at AWS.
 
 == Changelog ==
 
+= 0.21 =
+* Fix action in forms
+* Fix Typo in S3 Actions
+
 = 0.2 =
 * Make use of WordPress CSS
 
