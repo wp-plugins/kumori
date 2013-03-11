@@ -149,7 +149,7 @@
 <br/>
 
 <h3>Create new Bucket</h3>
-<form name="createBucket" action="<?php echo admin_url('admin.php?page=kumori/S3Actions.php'); ?>" method="post">
+<form name="createBucket" action="<?php echo admin_url('admin.php?page='.KUMORI_S3_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">New Bucket</th>
@@ -168,7 +168,7 @@
 <br/>
 
 <h3>Delete Bucket</h3>
-<form name="deleteBucket" action="<?php echo admin_url('admin.php?page=kumori/S3Actions.php'); ?>" method="post">
+<form name="deleteBucket" action="<?php echo admin_url('admin.php?page='.KUMORI_S3_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Bucket</th>
@@ -187,7 +187,7 @@
 <br/>
 
 <h3>Delete Bucket</h3>
-<form name="createFolder" action="<?php echo admin_url('admin.php?page=kumori/S3Actions.php'); ?>" method="post">
+<form name="createFolder" action="<?php echo admin_url('admin.php?page='.KUMORI_S3_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Bucket</th>
@@ -211,7 +211,7 @@
 <br/>
 
 <h3>Delete Folder</h3>
-<form name="deleteFolder" action="<?php echo admin_url('admin.php?page=kumori/S3Actions.php'); ?>" method="post">
+<form name="deleteFolder" action="<?php echo admin_url('admin.php?page='.KUMORI_S3_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Bucket</th>
@@ -235,7 +235,7 @@
 <br/>
 
 <h3>Delete File</h3>
-<form name="deleteFile" action="<?php echo admin_url('admin.php?page=kumori/S3Actions.php'); ?>" method="post">
+<form name="deleteFile" action="<?php echo admin_url('admin.php?page='.KUMORI_S3_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Bucket</th>
@@ -259,7 +259,7 @@
 <br/>
 
 <h3>Upload File</h3>
-<form name="uploadFile" action="<?php echo admin_url('admin.php?page=kumori/S3Actions.php'); ?>" method="post" enctype="multipart/form-data">
+<form name="uploadFile" action="<?php echo admin_url('admin.php?page='.KUMORI_S3_ACTIONS_PAGE); ?>" method="post" enctype="multipart/form-data">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Bucket</th>

@@ -29,7 +29,7 @@ function kumori_menu() {
     );
 
     // add the submenu page for the Kumori-fy Videos page
-    add_submenu_page( 
+    $kumori_actions_hook = add_submenu_page( 
             KUMORI_PATH . 'kumori/KumoriActions.php', // $parent_slug, 
             'Kumori-fy Videos!', // $page_title, 
             'Kumori-fy Videos!', // $menu_title, 
@@ -37,9 +37,11 @@ function kumori_menu() {
             KUMORI_PATH . 'kumori/KumoriActions.php', // $menu_slug, 
             ''// $function 
     );     
+	define('KUMORI_ACTIONS_PAGE',  substr($kumori_actions_hook, strripos ($kumori_actions_hook, "_" ) + 1 ) . ".php" );
+	//echo KUMORI_ACTIONS_PAGE;
     
     // add the submenu page for the S3 manage page
-    add_submenu_page( 
+    $kumori_s3_actions_hook = add_submenu_page( 
             KUMORI_PATH . 'kumori/KumoriActions.php', // $parent_slug, 
             'Manage S3', // $page_title, 
             'Manage S3', // $menu_title, 
@@ -47,9 +49,11 @@ function kumori_menu() {
             KUMORI_PATH . 'kumori/S3Actions.php', // $menu_slug, 
             ''// $function 
     ); 
+	define('KUMORI_S3_ACTIONS_PAGE',  substr($kumori_s3_actions_hook, strripos ($kumori_s3_actions_hook, "_" ) + 1 ) . ".php" );
+	//echo KUMORI_S3_ACTIONS_PAGE;
     
     // add the submenu page for the Elastic Transcoder manage page
-    add_submenu_page( 
+    $kumori_etr_actions_hook = add_submenu_page( 
             KUMORI_PATH . 'kumori/KumoriActions.php', // $parent_slug, 
             'Manage Elastic Transcoder', // $page_title, 
             'Manage Elastic Transcoder', // $menu_title, 
@@ -57,6 +61,8 @@ function kumori_menu() {
             KUMORI_PATH . 'kumori/ETrActions.php', // $menu_slug, 
             ''// $function 
     );            
+	define('KUMORI_ETR_ACTIONS_PAGE',  substr($kumori_etr_actions_hook, strripos ($kumori_etr_actions_hook, "_" ) + 1 ) . ".php" );
+	//echo KUMORI_ETR_ACTIONS_PAGE;
     
     // initialize the settings for kumori
     function kumori_settings_init() {

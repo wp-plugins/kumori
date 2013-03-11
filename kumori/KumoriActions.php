@@ -195,7 +195,7 @@
 ?>
 
 
-<form name="uploadFile" action="<?php echo admin_url('admin.php?page=kumori/KumoriActions.php'); ?>" method="post" enctype="multipart/form-data">
+<form name="uploadFile" action="<?php echo admin_url('admin.php?page='.KUMORI_ACTIONS_PAGE); ?>" method="post" enctype="multipart/form-data">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Presets</th>

@@ -287,7 +287,7 @@
 <br/>
 
 <h3>Create Pipeline</h3>
-<form name="createPipeline" action="<?php echo admin_url('admin.php?page=kumori/ETrActions.php'); ?>" method="post">
+<form name="createPipeline" action="<?php echo admin_url('admin.php?page='.KUMORI_ETR_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">New Pipeline</th>
@@ -321,7 +321,7 @@
 <br/>
 
 <h3>Create Preset</h3>
-<form name="createPreset" action="<?php echo admin_url('admin.php?page=kumori/ETrActions.php'); ?>" method="post">
+<form name="createPreset" action="<?php echo admin_url('admin.php?page='.KUMORI_ETR_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">New Preset</th>
@@ -440,7 +440,7 @@
 <br/>        
 
 <h3>Create Role</h3>
-<form name="createRole" action="<?php echo admin_url('admin.php?page=kumori/ETrActions.php'); ?>" method="post">
+<form name="createRole" action="<?php echo admin_url('admin.php?page='.KUMORI_ETR_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">New Role</th>
@@ -459,7 +459,7 @@
 <br/>
 
 <h3>Delete Pipeline</h3>
-<form name="deletePipeline" action="<?php echo admin_url('admin.php?page=kumori/ETrActions.php'); ?>" method="post">
+<form name="deletePipeline" action="<?php echo admin_url('admin.php?page='.KUMORI_ETR_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Pipeline</th>
@@ -478,7 +478,7 @@
 <br/>
 
 <h3>Delete Preset</h3>
-<form name="deletePreset" action="<?php echo admin_url('admin.php?page=kumori/ETrActions.php'); ?>" method="post">
+<form name="deletePreset" action="<?php echo admin_url('admin.php?page='.KUMORI_ETR_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Preset</th>
@@ -497,7 +497,7 @@
 <br/>
 
 <h3>Delete Role</h3>
-<form name="deleteRole" action="<?php echo admin_url('admin.php?page=kumori/ETrActions.php'); ?>" method="post">
+<form name="deleteRole" action="<?php echo admin_url('admin.php?page='.KUMORI_ETR_ACTIONS_PAGE); ?>" method="post">
     <p>
     <table class="form-table">
         <tr valign="top"><th scope="row">Role</th>
