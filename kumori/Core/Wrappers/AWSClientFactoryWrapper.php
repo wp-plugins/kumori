@@ -1,6 +1,6 @@
 <?php
 
-require_once '/../AWS/aws.phar';
+require_once CORE_PATH . 'AWS/aws.phar';
 
 use Aws\Common\Enum\Region;
 use Aws\Common\Aws;

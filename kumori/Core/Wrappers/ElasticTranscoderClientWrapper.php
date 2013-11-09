@@ -1,6 +1,6 @@
 <?php
 
-require_once '/../Objects/ElasticTranscoderObjects.php';
+require_once CORE_PATH . 'Objects/ElasticTranscoderObjects.php';
 require_once 'AWSClientFactoryWrapper.php';
 
 class ElasticTranscoderClientWrapper{

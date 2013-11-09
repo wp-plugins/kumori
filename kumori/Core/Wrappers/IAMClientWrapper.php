@@ -1,6 +1,6 @@
 <?php
 
-require_once '/../Objects/CommonObjects.php';
+require_once CORE_PATH . 'Objects/CommonObjects.php';
 
 class IAMClientWrapper{
     private $IAMclient = null;

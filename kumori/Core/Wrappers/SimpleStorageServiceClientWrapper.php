@@ -1,7 +1,7 @@
 <?php
 
-require_once '/../Objects/S3Objects.php';
-require_once '/../Objects/CommonObjects.php';
+require_once CORE_PATH . 'Objects/S3Objects.php';
+require_once CORE_PATH . 'Objects/CommonObjects.php';
 
 /**
  * 
@@ -221,7 +221,7 @@ class SimpleStorageServiceClientWrapper{
         if(isset($wait)){
             if($wait == true){
                 // now wait for it...
-                $this->s3client->waitUntilObjectExists(array('Bucket' => $bucketName, 'Key' => $remoteFile, 'waiter.max_attempts' => 3));
+                $this->s3client->waitUntilObjectExists(array('Bucket' => $bucketName, 'Key' => $remoteFile, 'waiter.max_attempts' => 5));
             }
         }        
     }
@@ -240,7 +240,7 @@ class SimpleStorageServiceClientWrapper{
     }
     
     public function waitUntilObjectExists($argBucket, $argObjectName){
-        $this->s3client->waitUntilObjectExists(array('Bucket' => $argBucket, 'Key' => $argObjectName, 'waiter.max_attempts' => 5));
+        $this->s3client->waitUntilObjectExists(array('Bucket' => $argBucket, 'Key' => $argObjectName, 'waiter.max_attempts' => 15));
     }
 }
 

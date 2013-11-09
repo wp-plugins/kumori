@@ -3,7 +3,7 @@
 <p>Here you can manage your Elastic Transcoder service.</p>
 
 <?php
-    require_once '/Core/Core.php';
+    require_once KUMORI_PATH . 'kumori/Core/Core.php';
 
     // get an Elastic TRanscoder client wrapper 
     $etr = AWSClientFactoryWrapper::Instance()->createElasticTranscoderClient();

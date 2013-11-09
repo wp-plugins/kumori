@@ -3,7 +3,7 @@
 <p>You can select multiple encoding presets and create transcoded video files from your source video on-the-fly.</p>
 
 <?php
-    require_once '/Core/Core.php';
+    require_once KUMORI_PATH . 'kumori/Core/Core.php';
     // make sure that the script will take its time...
     set_time_limit(0);
     ini_set('max_execution_time', '0');

@@ -3,8 +3,8 @@ Contributors:
 Donate link: 
 Tags: plugin, cloud, transcode, amazon, aws, video, S3, elastic transcoder
 Requires at least: 3.5.1
-Tested up to: 3.5.1
-Stable tag: 0.21
+Tested up to: 3.7.1
+Stable tag: 0.22
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,6 +20,7 @@ It requires a subscription at AWS.
 
 1. Upload the zip file via the Add new Plugin Page
 2. Activate it via the Installed Plugins Page
+3. Set the AWS credentials throught Wordpress Admin->Settings->Media page
 
 == Frequently Asked Questions ==
 
@@ -27,6 +28,11 @@ It requires a subscription at AWS.
 
 
 == Changelog ==
+
+= 0.22 =
+* Fix (hopefully) the require_once path nightmares
+* Change the max wait attempts from 5 to 15
+* Point to the Settings->Media page for settings the AWS credentials
 
 = 0.21 =
 * Fix action in forms

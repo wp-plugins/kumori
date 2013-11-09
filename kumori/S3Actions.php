@@ -3,7 +3,7 @@
 <p>Here you can manage your S3 service.</p>
 
 <?php
-    require_once '/Core/Core.php';            
+    require_once KUMORI_PATH . 'kumori/Core/Core.php';
     // get an S3 client wrapper object            
     $s3 = AWSClientFactoryWrapper::Instance()->createSimpleStorageServiceClient();
 
