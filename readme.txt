@@ -14,13 +14,21 @@ It's a plugin that lets the users upload video files and transcode them on-the-c
 
 It's a plugin that lets the users upload video files and transcode them on-the-fly using AWS Elastic Transcoder and S3 Services.
 Using Kumori is pretty simple, just select the presets you want, upload the file, and then your video file becomes kumori-fied!
+It also provides a simple management of AWS S3 and Elastic Transcoder services within the Wordpress Admin Menu.
 It requires a subscription at AWS.
+
+Next major version features:
+- Allow the transcoding of existing video files in Media library
+- Allow the transcoding of existing video files in S3
+- Provide the new features of Elastic Transcoder
+- Friendlier user messages
+- More checks for file operations
 
 == Installation ==
 
 1. Upload the zip file via the Add new Plugin Page
 2. Activate it via the Installed Plugins Page
-3. Set the AWS credentials throught Wordpress Admin->Settings->Media page
+3. Set the AWS credentials through Wordpress Admin->Settings->Media page
 
 == Frequently Asked Questions ==
 
