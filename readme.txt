@@ -18,11 +18,11 @@ It also provides a simple management of AWS S3 and Elastic Transcoder services w
 It requires a subscription at AWS.
 
 Next major version features:
-- Allow the transcoding of existing video files in Media library
-- Allow the transcoding of existing video files in S3
-- Provide the new features of Elastic Transcoder
-- Friendlier user messages
-- More checks for file operations
+* Allow the transcoding of existing video files in Media library
+* Allow the transcoding of existing video files in S3
+* Provide the new features of Elastic Transcoder
+* Friendlier user messages
+* More checks for file operations
 
 == Installation ==
 
