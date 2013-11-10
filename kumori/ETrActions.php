@@ -4,15 +4,14 @@
 
 <?php
     require_once KUMORI_PATH . 'kumori/Core/Core.php';
-
-    // get an Elastic TRanscoder client wrapper 
-    $etr = AWSClientFactoryWrapper::Instance()->createElasticTranscoderClient();
-
-    // get an IAM client wrapper
-    $iam = AWSClientFactoryWrapper::Instance()->createIAMClient();
-
-    // let's check the POST
     try {
+        // get an Elastic TRanscoder client wrapper 
+        $etr = AWSClientFactoryWrapper::Instance()->createElasticTranscoderClient();
+
+        // get an IAM client wrapper
+        $iam = AWSClientFactoryWrapper::Instance()->createIAMClient();
+
+        // let's check the POST    
         if(isset($_POST['newPipeline'])){
             // user wanted to create a new Pipeline, so let's get to it!
             $etr->createPipeline($_POST['newPipeline'], $_POST['createPipelineInputBucket'], 

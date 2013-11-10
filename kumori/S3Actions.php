@@ -5,10 +5,10 @@
 <?php
     require_once KUMORI_PATH . 'kumori/Core/Core.php';
     // get an S3 client wrapper object            
-    $s3 = AWSClientFactoryWrapper::Instance()->createSimpleStorageServiceClient();
-
-    // let's check the POST
     try {
+        $s3 = AWSClientFactoryWrapper::Instance()->createSimpleStorageServiceClient();
+
+        // let's check the POST
         if(isset($_POST['newBucket'])){
             // user wanted to create a new Bucket, so let's get to it!
             $s3->createBucket($_POST['newBucket'], true);

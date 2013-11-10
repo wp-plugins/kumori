@@ -8,11 +8,11 @@
     set_time_limit(0);
     ini_set('max_execution_time', '0');
 
-    // get an Elastic TRanscoder client wrapper 
-    $etr = AWSClientFactoryWrapper::Instance()->createElasticTranscoderClient();
-
-    // check the post
     try {
+        // get an Elastic TRanscoder client wrapper 
+        $etr = AWSClientFactoryWrapper::Instance()->createElasticTranscoderClient();
+
+        // check the post
         if(isset($_POST['kumoriPresets'])){
             // let's check the data
             // check if presets were selected

@@ -4,7 +4,7 @@ Donate link:
 Tags: plugin, cloud, transcode, amazon, aws, video, S3, elastic transcoder
 Requires at least: 3.5.1
 Tested up to: 3.7.1
-Stable tag: 0.22
+Stable tag: 0.23
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,9 @@ Next major version features:
 
 
 == Changelog ==
+
+= 0.23 =
+* Fix (possibly and hopefully) the fatal errors from not setting the AWS credentials BEFORE using the plugin actions
 
 = 0.22 =
 * Fix (hopefully) the require_once path nightmares

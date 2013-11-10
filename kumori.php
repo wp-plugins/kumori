@@ -3,7 +3,7 @@
 Plugin Name: Kumori (曇)
 Plugin URI: http://kumori-plugin.blogspot.com/
 Description: Transcode video files on-the-cloud using AWS Elastic Transcoder and S3
-Version: 0.22
+Version: 0.23
 Author: Arslanoglou Georgios
 Author URI: http://gpower2.blogspot.com/
 License: GPLv2
