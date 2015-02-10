@@ -38,11 +38,9 @@ class AWSClientFactoryWrapper
     {
         // Set the private variables
         // get AWS Access Key
-        //$this->awsAccessId = 'AKIAISYUUKRZL3HMB23A';
         $this->awsAccessId = get_option('kumori_aws_access_id');
         
         // get AWS Secret Key
-        //$this->awsSecretKey = '3PfMw1E1AfdNEGFhuLsy2wkcZwP3iq4pQvFfec7b';
         $this->awsSecretKey = get_option('kumori_aws_secret_key');
         
         // get region
